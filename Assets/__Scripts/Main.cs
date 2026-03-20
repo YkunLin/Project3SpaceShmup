@@ -95,4 +95,9 @@ public class Main : MonoBehaviour
         // WeaponDefinition with a type of eWeaponType.none (the default value)
         return(new WeaponDefinition());
     }
+
+    static public void SHIP_DESTROYED(Enemy e)
+    {
+        
+    }
 }
