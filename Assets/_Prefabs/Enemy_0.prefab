@@ -101,6 +101,7 @@ MonoBehaviour:
   fireRate: 0.3
   health: 10
   score: 100
+  hitSound: {fileID: 8300000, guid: 7bef0064f8567430cac22499c6b93d4f, type: 3}
 --- !u!114 &6102155617758237396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c49ff05340840f48257b0b511ff8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showingColor: 0
+  blinkCompleteTime: 0
+  ignoreOnCollisionEnter: 0
 --- !u!1001 &2694280552386887143
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -124,6 +124,7 @@ public class Weapon : MonoBehaviour
             case eWeaponType.blaster:
             p = MakeProjectile();
             p.vel = vel;
+            GetComponent<AudioSource>().Play();
             break;
 
             case eWeaponType.spread:

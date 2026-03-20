@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public float health = 10; // Damage needed to destroy this enemy
     public int score = 100; //Points earned for destroying this
     protected bool  calledShipDestroyed = false;
+    public AudioClip hitSound;
 
     protected BoundsCheck bndCheck;  //change bndCheck from private to protected
 
@@ -65,6 +66,15 @@ public class Enemy : MonoBehaviour
                 health -= Main.GET_WEAPON_DEFINITION(p.type).damageOnHit;
                 if(health <= 0)
                 {
+                    if(hitSound != null)
+                    {
+                        Debug.Log("playing sound");
+                        AudioSource.PlayClipAtPoint(hitSound, Camera.main.transform.position,1f);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("hitSound is null on " + gameObject.name);
+                    }
                     //Destroy this Enemy
                     Destroy(this.gameObject);
                 }

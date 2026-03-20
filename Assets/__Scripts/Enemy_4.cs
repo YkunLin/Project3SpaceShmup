@@ -109,6 +109,8 @@ public class Enemy_4 : Enemy        //extends the Enemy class
                     calledShipDestroyed = true;
                 }
 
+                AudioSource.PlayClipAtPoint(hitSound, Camera.main.transform.position,1f);
+
                 //Destroy this Enemy_4
                 Destroy(gameObject);
             }
