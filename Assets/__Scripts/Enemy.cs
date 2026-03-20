@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoundsCheck))]
 public class Enemy : MonoBehaviour
 {
     [Header("Inscribed")]
@@ -10,7 +11,7 @@ public class Enemy : MonoBehaviour
     public float health = 10; // Damage needed to destroy this enemy
     public int score = 100; //Points earned for destroying this
 
-    private BoundsCheck bndCheck;
+    protected BoundsCheck bndCheck;  //change bndCheck from private to protected
 
     void Awake()
     {
