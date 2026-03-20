@@ -532,7 +532,7 @@ MonoBehaviour:
     weaponModelPrefab: {fileID: 919132149155446097, guid: 0522e2d6add5631469273543744ebf7f, type: 3}
     projectilePrefab: {fileID: 3972464684871269047, guid: 317110969727d4490ab7e797d7890960, type: 3}
     projectileColor: {r: 1, g: 1, b: 1, a: 1}
-    damageOnHit: 1
+    damageOnHit: 5
     damagePerSec: 0
     delayBetweenShots: 0.2
     velocity: 50
@@ -689,7 +689,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1462823987570595495, guid: de0fc6ab4b56d46e4b0a848852afde07, type: 3}
       propertyPath: _type
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5057616981499243838, guid: de0fc6ab4b56d46e4b0a848852afde07, type: 3}
       propertyPath: m_RootOrder
